@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
+    <title>Fruit Burst</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
@@ -18,19 +23,50 @@
     }
   </script>
   <style>
+    .font-family{
+        font-family: 'Lato', sans-serif;
+    }
 
   </style>
 
 </head>
-<body>
-    <header>
 
+<body class="font-family">
+    <header class="font-family relative">
+        <div class="navbar bg-base-100 gap-60 justify-evenly border rounded-full ml-3 mr-3 mt-4  flex-rows-1 md:flex-cols-2 lg:flex-rows-1 bg-[#F85559]">
+            <div class="flex text-cols-4 gap-3">
+                <ul class="flex text-cols-4 gap-5 ml-9 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="w-10 rounded-full text-center">
+                    <img src="/images//logo.png" />
+                  </div>
+                  
+                <div class="flex-1">
+                  <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+                </div>
+            </div>
+            <div class="flex-none gap-2  rounded-full relative">
+              <div class=" rounded-full">
+                <input type="text" placeholder="Search"  class="rounded-full border pr-9 -mr-10 pl-9 flex-cols-1 md:flex-cols-1 lg:flex-rows-1 input input-bordered md:w-auto"/><i class="fa-solid fa-magnifying-glass"></i>
+                
+              </div>
+
+            </div>
+          
+          </div>
+          
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
