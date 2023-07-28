@@ -197,18 +197,13 @@
                         <input type="radio" name="rating-10" class="bg-[#c97e61] mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-[#d27d5c] mask mask-star-2 mask-half-2" />
                       </div>
-                      <div class="text-red-500 justify-center text-center mt-5"><details class="justify-center"><!-- The button to open modal -->
-                        <label for="my_modal_6" class="text-purple-400 ">Details</label>
-                        
-                        <!-- Put this part before </body> tag -->
-                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-                        <div class="modal"> 
-                          <div class="modal-box">
-                            <div class="justify-center text-center"><img  src="images/fruit6.png" alt="" class=" justify-center text-center ml-40 p-2"></div>
-                            <div class="m-8">
-                                <h2 class="text-3xl text-[#12121299]">Apples</h2>
-                                <p class="text-1xl text-[#121212]">Contrary to popular belief, is not simply random text. It has roots in a piece of</p>
-                            </div>
+                      <div class="text-red-500 justify-center text-center mt-5"><details class="justify-center">
+                        <button class="text-purple-400" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                          <form method="dialog" class="modal-box w-80 max-w-5xl">
+                            <img class="justify-center ml-20" src="images/fruit6.png" alt="">
+                            <h3 class="text-2xl  text-center justify-center">Apples</h3>
+                            <p class="py-4 text-slate-400 justify-center text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of</p>
                             <div class="rating rating-lg rating-half justify-center font-normal">
                                 <input type="radio" name="rating-10" class="rating-hidden" />
                                 <input type="radio" name="rating-10" class=" bg-[#F85559] mask mask-star-2 mask-half-1" />
@@ -222,19 +217,13 @@
                                 <input type="radio" name="rating-10" class="bg-[#c97e61] mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="rating-10" class="bg-[#d27d5c] mask mask-star-2 mask-half-2" />
                               </div>
-                              
-                            
-                            <div class="flex flex-cols-2 justify-center gap-2 text-center mt-2">
-                                <div class=" modal-action mb-2">
-                                   
-                                    <button class="btn border border-red-800">Close</button>
-                                  </div>
-                                  <div>
-                                      <button class="text-white p-3.5 mb-5 bg-red-500 rounded-md justify-center">Buy Now</button>
-                                  </div>
+                            <div class="modal-action justify-center text-center mt-1">
+                                <button class="bg-red-400 text-white p-3 btn border-white">Buy Now</button>
+                             
+                              <button class="btn border border-red-700">Close</button>
                             </div>
-                          </div>
-                        </div>
+                          </form>
+                        </dialog>
                         <img src="images/fruit6.png" alt=""></details></div>
                       
                     </div>
@@ -270,8 +259,8 @@
                             <button class=" text-purple-400" onclick="my_modal_1.showModal()">Details</button>
 
                             <dialog id="my_modal_1" class="modal">
-                              <form method="dialog" class="modal-box">
-                                <img class="text-center justify-center pl-36" src="images/fruit7.png" alt="">
+                              <form method="dialog" class="modal-box w-80">
+                                <img class="text-center justify-center pl-16" src="images/fruit7.png" alt="">
                                 <h3 class="font-2xl text-lg">Oranges</h3>
                                 <p class="text-black">Contrary to popular belief, is not simply random text. It has roots in a piece of</p>
                                 <div class="rating rating-lg rating-half justify-center font-normal">
@@ -329,10 +318,10 @@
                                         
                             <button class="text-purple-500" onclick="my_modal_5.showModal()">Details</button>
                                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                                    <form method="dialog" class="modal-box">
+                                    <form method="dialog" class="modal-box w-80">
                                         <img class=
                                         
-                                        "ml-40 justify-center text-center" src="images/fruit8.png" alt="">
+                                        "ml-20 justify-center text-center" src="images/fruit8.png" alt="">
                                      <h3 class="text-2xl text-center justify-center">Dragons</h3>
                                     <p class="py-4 text-center text-slate-500 jystify-center
                                     ">Contrary to popular belief, is not simply random text. It has roots in a piece of
@@ -383,7 +372,12 @@
                         <input type="radio" name="rating-10" class="bg-[#c97e61] mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-[#d27d5c] mask mask-star-2 mask-half-2" />
                       </div>
-                      <div class="text-red-500 justify-center text-center mt-5"><details class="justify-center"><img src="images/fruit9.png" alt=""></details>
+
+                      <div class="text-red-500 justify-center text-center mt-5">
+                        <details class="justify-center">
+                            
+                            
+                        <img src="images/fruit9.png" alt=""></details>
                     </div>
                       
                     </div>
